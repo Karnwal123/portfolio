@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kanishka Portfolio</title>
-    <link rel="icon" href="favicon.ico" />
+    <title>Kanishka Karnwal | Software Engineer</title>
+    <link rel="icon" href="icons8-favicon-48.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,38 +18,26 @@
       <div class="nav-links">
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
-        <a href="#techstack">TECH STACK</a>
         <a href="#projects">PROJECTS</a>
-        <a href="#services">SERVICES</a>
+        <a href="#experience">EXPERIENCE</a>
         <a href="#contact">CONTACT</a>
       </div>
       <div class="nav-actions">
-        <button onclick="toggleTheme()" class="theme-toggle">🌙</button>
-        <a href="Kanishka_Resume.pdf" download class="lets-talk">Download CV</a>
+        <button onclick="toggleTheme()" class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+        <a href="Kanishka_UI.pdf" download class="lets-talk"><i class="fas fa-download"></i> Download CV</a>
       </div>
     </nav>
     <!--  Hero Section  -->
     <section class="hero" id="home">
       <div class="hero-content">
-        <h3>Hello, I am</h3>
-        <h1>KANISHKA KARNWAL</h1>
-        <h2>I’m a <span class="typing"></span></h2>
-        <p>
-          I’m a passionate Frontend & Backend Developer at HCL Technologies,
-          building scalable, elegant, and user-focused web solutions.
+        <h1 class="hero-tagline">Software Engineer</h1>
+        <h2 class="hero-subtitle">designing scalable digital interfaces</h2>
+        <p class="hero-desc">
+          Designing scalable and high-performance user interfaces with a focus on modern frontend architecture, responsive design, and seamless digital experiences. Leveraging intelligent integrations and modern development workflows to build efficient, interactive, and future-ready web applications.
         </p>
         <div class="hero-buttons">
-          <a href="#contact" class="primary-btn">GET IN TOUCH</a>
-          <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="image-container">
-          <img src="homeimg.jpeg" alt="Kanishka Profile" />
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="#contact" class="secondary-btn">Contact Me</a>
         </div>
       </div>
     </section>
@@ -57,34 +45,13 @@
     <section class="section about" id="about">
       <div class="section-content">
         <h3>ABOUT ME</h3>
-        <h2>Who I Am</h2>
         <p>
-          Hey there! I’m Kanishka—a Frontend & Backend Developer working at HCL
-          Technologies. I specialize in creating responsive, scalable
-          applications with modern technologies like React, Node.js, Spring
-          Boot, and AWS. I enjoy solving complex problems and delivering
-          high-quality code.
+          Software Engineer with experience in building scalable and high-performance web applications using React.js, JavaScript, and Redux. Skilled in developing responsive user interfaces, reusable components, and modern web solutions focused on performance, scalability, and seamless user experience.
+
+Experienced in integrating RESTful and AI-powered APIs, optimizing application performance, and implementing clean and maintainable architecture. Proficient in leveraging modern development tools such as GitHub Copilot, Cursor AI, and OpenAI APIs to enhance development efficiency, streamline debugging, and accelerate delivery workflows.
+
+Strong understanding of modern UI/UX principles, frontend optimization techniques, and intelligent application development, with the ability to collaborate effectively across teams to deliver impactful digital solutions.
         </p>
-        <div class="skills">
-          <div class="skill-item">
-            <h4>Frontend Development</h4>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <h4>Backend Development</h4>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <h4>DevOps & Cloud</h4>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="section-image">
         <div class="image-container">
@@ -92,99 +59,7 @@
         </div>
       </div>
     </section>
-    <!-- Tech Stack Section -->
-    <section class="section techstack" id="techstack">
-      <h3>TECH STACK</h3>
-      <h2>Tools & Technologies</h2>
-      <p class="tech-intro">
-        Here are the technologies I work with daily to craft robust, scalable,
-        and elegant solutions.
-      </p>
-      <div class="tech-grid">
-        <!-- Frontend -->
-        <div class="tech-category">
-          <h4>Frontend</h4>
-          <div class="tech-items">
-            <div class="tech-card">
-              <i class="fab fa-react"></i>
-              <span>React</span>
-              <p>3+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-js-square"></i>
-              <span>JavaScript</span>
-              <p>4+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS3</span>
-              <p>4+ years</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Backend -->
-        <div class="tech-category">
-          <h4>Backend</h4>
-          <div class="tech-items">
-            <div class="tech-card">
-              <i class="fab fa-node"></i>
-              <span>Node.js</span>
-              <p>3+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-java"></i>
-              <span>Java</span>
-              <p>3+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-leaf"></i>
-              <span>Spring Boot</span>
-              <p>2+ years</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- DevOps -->
-        <div class="tech-category">
-          <h4>DevOps & Cloud</h4>
-          <div class="tech-items">
-            <div class="tech-card">
-              <i class="fab fa-docker"></i>
-              <span>Docker</span>
-              <p>2+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-aws"></i>
-              <span>AWS</span>
-              <p>2+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-git-alt"></i>
-              <span>Git</span>
-              <p>4+ years</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <div class="tech-category">
-          <h4>Databases</h4>
-          <div class="tech-items">
-            <div class="tech-card">
-              <i class="fas fa-database"></i>
-              <span>MySQL</span>
-              <p>3+ years</p>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-database"></i>
-              <span>MongoDB</span>
-              <p>2+ years</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!--  Projects Section -->
     <section class="section projects" id="projects">
       <h3>MY WORK</h3>
@@ -216,50 +91,88 @@
         </div>
       </div>
     </section>
-    <!--  Services Section -->
-     <section class="section services" id="services">
-      <h3>WHAT I OFFER</h3>
-      <h2>My Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-code"></i></div>
-          <h4>Full Stack Development</h4>
-          <p>
-            End-to-end web app development with React, Node.js, and MongoDB.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-database"></i></div>
-          <h4>API Development</h4>
-          <p>Designing and integrating robust RESTful APIs & microservices.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-          <h4>Responsive Web Design</h4>
-          <p>Creating seamless UI for desktop, tablet, and mobile devices.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-cloud-upload-alt"></i>
+    <!--  Experience Section -->
+    <section class="section experience" id="experience">
+      <h3>MY CAREER</h3>
+      <h2>Professional Experience</h2>
+      <div class="experience-timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3>HCL SOFTWARE</h3>
+              <p class="exp-role">Developer / Software Engineer II</p>
+              <p class="exp-duration"><i class="fas fa-calendar"></i> May 2022 - Present | Noida, India</p>
+            </div>
+            <div class="exp-body">
+              <div class="exp-section">
+                <ul>
+                  <li>Designed and developed scalable frontend modules using React.js for enterprise applications, focusing on usability, performance, and maintainability.</li>
+                  <li>Implemented Knowledge Management features, including Discourse-based Knowledge Articles, enabling structured content creation, search, and consumption across the platform.</li>
+                  <li>Developed SLA management screens, ensuring accurate visualization of SLA metrics, status indicators, and compliance tracking for operational workflows.</li>
+                  <li>Built and enhanced Contract Management UI, displaying contract listings, status tracking, vendors, business functions, and life-cycle states with optimized data rendering.</li>
+                  <li>Integrated Slack notifications and workflows into the front end, enabling real-time alerts and improved collaboration between support and operations teams.</li>
+                  <li>Collaborated closely with backend teams to integrate Knowledge microservices, handling REST APIs, data mapping, error states, and loading strategies.</li>
+                  <li>Designed and implemented UI Builder enhancements, including list personalization features by integrating configurable views.</li>
+                </ul>
+              </div>
+              <div class="exp-section">
+                <h4>AI & Tools Integration</h4>
+                <div class="ai-tools">
+                  <span class="ai-badge"><i class="fas fa-robot"></i> GitHub Copilot</span>
+                  <span class="ai-badge"><i class="fas fa-code"></i> Claude Code</span>
+                  <span class="ai-badge"><i class="fas fa-wind"></i> Windsurf</span>
+                  <span class="ai-badge"><i class="fas fa-lightbulb"></i> Codeium</span>
+                </div>
+                <p>Leveraged AI-powered development tools including GitHub Copilot for intelligent code completion, Claude Code for advanced AI-assisted development, Windsurf for AI-driven code navigation, and Codeium for intelligent autocomplete, significantly improving productivity and code quality.</p>
+              </div>
+            </div>
           </div>
-          <h4>Cloud Deployment</h4>
-          <p>
-            Deploying apps on AWS, Azure & Docker for production environments.
-          </p>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-lock"></i></div>
-          <h4>Security & Auth</h4>
-          <p>
-            Implementing JWT, OAuth2 & securing backend systems effectively.
-          </p>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3>HCL TECH</h3>
+              <p class="exp-role">Quality Assurance Intern / Analyst</p>
+              <p class="exp-duration"><i class="fas fa-calendar"></i> July 2021 – May 2022 | Noida, India</p>
+            </div>
+            <div class="exp-body">
+              <div class="exp-section">
+                <ul>
+                  <li>Performed manual testing on web and mobile applications, including sanity, regression, black-box, and white-box testing.</li>
+                  <li>Designed and executed QA test plans and testing strategies.</li>
+                  <li>Identified and documented bugs with detailed reproduction steps and severity levels.</li>
+                  <li>Collaborated with development teams to ensure quality standards and timely resolution of issues.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
-          <h4>Performance Optimization</h4>
-          <p>
-            Improving load times & app speed using caching and lazy loading.
-          </p>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3>HCL TECH</h3>
+              <p class="exp-role">TechBee Scholar (Apprenticeship)</p>
+              <p class="exp-duration"><i class="fas fa-calendar"></i> Nov 2020 – July 2021 | Noida, India</p>
+            </div>
+            <div class="exp-body">
+              <div class="exp-section">
+                <ul>
+                  <li>Completed comprehensive training in frontend web development and professional communication skills.</li>
+                  <li>Successfully passed all examinations and developed a web-based application as part of the training program.</li>
+                  <li>Built foundational skills in HTML, CSS, JavaScript, and modern web frameworks.</li>
+                  <li>Developed strong problem-solving abilities and industry best practices knowledge.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -280,19 +193,8 @@
         </form>
       </div>
       <div class="section-image">
-        <div class="contact-info">
-          <div class="info-item">
-            <h4>Email</h4>
-            <p>contact@kanishka.com</p>
-          </div>
-          <div class="info-item">
-            <h4>Phone</h4>
-            <p>+91 9412662409</p>
-          </div>
-          <div class="info-item">
-            <h4>Location</h4>
-            <p>Noida, INDIA</p>
-          </div>
+        <div class="image-container">
+          <img src="myImage.jpg" alt="Kanishka Karnwal" />
         </div>
       </div>
     </section>
@@ -301,38 +203,27 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
-          <div class="logo">KANISHKA</div>
+          <p class="footer-role">Software Engineer || at HCL</p>
           <p>
-            Backend & Frontend Developer at HCL. Building clean and scalable
-            software solutions.
+            Exploring modern technologies and AI-powered workflows to build smarter applications.
           </p>
           <div class="footer-social">
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/in/kanishka-karnwal-773822323" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Karnwal123" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="Kanishka_UI.pdf" download class="social-link"><i class="fas fa-download"></i></a>
           </div>
-        </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <nav class="footer-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#techstack">Tech Stack</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
         </div>
         <div class="footer-section">
           <h4>Contact Info</h4>
           <div class="contact-info">
-            <p>📧 contact@kanishka.com</p>
-            <p>📱 +91 9412662409</p>
-            <p>📍 Noida, INDIA</p>
+            <p><i class="fas fa-envelope footer-icon"></i> karnwalkanishka@gmail.com</p>
+            <p><i class="fas fa-phone footer-icon"></i> +91 9412662409</p>
+            <p><i class="fas fa-map-marker-alt footer-icon"></i> Noida, INDIA</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Kanishka Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Kanishka Portfolio. All rights reserved.</p>
       </div>
     </footer>
 

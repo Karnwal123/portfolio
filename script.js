@@ -36,34 +36,23 @@ document.addEventListener("DOMContentLoaded", type);
 // Theme Toggle with LocalStorage
 function toggleTheme() {
   document.body.classList.toggle("light-theme");
+  const btn = document.getElementById("themeToggle");
 
-  // Save preference
   if (document.body.classList.contains("light-theme")) {
     localStorage.setItem("theme", "light");
+    btn.innerHTML = '<i class="fas fa-sun"></i>';
   } else {
     localStorage.setItem("theme", "dark");
+    btn.innerHTML = '<i class="fas fa-moon"></i>';
   }
 }
 
 // Apply saved theme on load
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
+  const btn = document.getElementById("themeToggle");
   if (savedTheme === "light") {
     document.body.classList.add("light-theme");
+    if (btn) btn.innerHTML = '<i class="fas fa-sun"></i>';
   }
-});
-
-// Animate Services Section
-const serviceCards = document.querySelectorAll(".service-card");
-
-window.addEventListener("scroll", () => {
-  const triggerBottom = window.innerHeight * 0.85;
-  serviceCards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerBottom) {
-      card.classList.add("show");
-    } else {
-      card.classList.remove("show");
-    }
-  });
 });
