@@ -185,11 +185,24 @@ Strong understanding of modern UI/UX principles, frontend optimization technique
           Have a project in mind or want to collaborate? Reach out—I’m just an
           email away!
         </p>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
+        <form class="contact-form" id="contactForm" novalidate>
+          <input type="hidden" name="_subject" value="New portfolio contact message" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="form-field">
+            <input type="text" id="contactName" name="name" placeholder="Your Name" required />
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <input type="email" id="contactEmail" name="email" placeholder="Your Email" required />
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <textarea id="contactMessage" name="message" placeholder="Your Message" required></textarea>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
           <button type="submit" class="primary-btn">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
         </form>
       </div>
       <div class="section-image">
@@ -203,7 +216,7 @@ Strong understanding of modern UI/UX principles, frontend optimization technique
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
-          <p class="footer-role">Software Engineer || at HCL</p>
+          <p class="footer-role">Software Engineer || at HCL Software</p>
           <p>
             Exploring modern technologies and AI-powered workflows to build smarter applications.
           </p>
